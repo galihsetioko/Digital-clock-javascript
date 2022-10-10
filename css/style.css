@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'pd';
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock {
+    width: 30%;
+    /* padding: 10px 70px; */
+    border: 10px solid black;
+    box-shadow: 3p 3px 2px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock ul {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+    height:100%;
+}
+.clock ul li {
+    font-size: 100px;
+}
+
+
+
+/* For Font Custom */
+@font-face {
+    font-family: 'pd';
+    src: url(../asset/product.ttf);
+}
+
+/* Responsive Breapoint */
+/* For every breakpoint width */
+@media screen and ( max-width:768px) {
+    .clock {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .clock {
+        width: 65%;
+    }
+}
